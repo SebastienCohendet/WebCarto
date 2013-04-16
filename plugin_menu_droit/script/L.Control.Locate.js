@@ -26,7 +26,7 @@
             alert(err.message);
         },
         title: "Où suis-je ?",
-        popupText: ["La précision de la localisation est de  ", " m."],
+        popupText: ["La précision de la localisation est de  ", "."],
         setView: true, // automatically sets the map view to the user's location
         locateOptions: {}
     },
@@ -127,7 +127,7 @@
             var distance, unit;
             if (self.options.metric) {
                 distance = radius.toFixed(0);
-                unit = "meters";
+                unit = "mètres";
             } else {
                 distance = (radius * 3.2808399).toFixed(0);
                 unit = "feet";
